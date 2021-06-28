@@ -6,7 +6,7 @@ describe('user can see different stats information', () => {
     it('is expected to show  different stats data', () => {
       cy.get('[data-cy=icon]').should('be.visible');
       cy.get('[data-cy=label]').should('contain', 'Points');
-      cy.get('[data-cy=numer]').should('contain', '3000');
+      cy.get('[data-cy=number]').should('contain', '3,000');
     });
   });
 });

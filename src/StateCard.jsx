@@ -4,10 +4,10 @@ const StateCard = ({icon,label,number}) => {
   return (
     <div className='stat-card'>
       <div className='stat-line'>
-        <span>{icon}</span>
-        <strong>{label}</strong>
+        <span data-cy='icon'>{icon}</span>
+        <strong data-cy='label'>{label}</strong>
       </div>
-      <p>{number.toLocaleString()}</p>
+      <p data-cy='number'>{number.toLocaleString()}</p>
     </div>
   );
 };
